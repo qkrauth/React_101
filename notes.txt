@@ -1,0 +1,57 @@
+use "let" when you want to create a variable that is really variable
+
+use "const" when you want to constant variable/value (never changes)
+
+arrow functions solve the problem with the "this" keyword
+
+when importing and exporting (modules) the export "default" keyword marks the default export of said file
+
+use curly braces when importing items by their name {name} and not with the default keyword, use when you must import more than one thing
+
+    import person from "./person.js"
+
+    import {baseData, cleanData} from "./utility.js"
+
+classes are blueprints for objects (JS objects in our case) a class has the "class" keyword, and they can have both properties and methods. Methods are functions attached to classes where properties are variable attached to classes
+
+a class is instantiated with the "new" keyword, classes are a way of creating "contructor" functions
+
+a property is added to a class by adding a "constructor()" the default function/method of a class
+
+properties are set up with the "this" keyword. this.name = "Quinten"
+
+    class Person {
+        contructor() {
+            this.name = "Quinten";
+        }
+
+        printMyName() {
+            console.log(this.name);
+        }
+    }
+
+    const person = new Person();
+    person.printMyName();
+
+the spread/rest operator is "..."
+
+spread: is used to split up array elements OR object properties
+
+rest: used to merge a list of function arguments into an array
+
+string, numbers, and booleans are "primitive types" while objects and arrays are "reference types"
+
+What is React? React or ReactJS is a free open source front end JavaScript library developed by Facebook for building user interfaces based on UI components, maintained by Meta and the community of companies and devs
+
+How to create a new react app? npx create-react-app@latest project/folder name
+
+What is JSX? JSX in React is an extension to the JavaScript language syntax that provides a way to write HTML in React. JSX stands for JavaScript XML and it makes it easier to write and add HTML in React
+
+What is SPA's in React? SPA is a single-page-application, a web app implementation that loads only a single web document, then updates the body content of that single document via JavaScript
+
+What is the virtual DOM? React uses virtual DOM to optimize the performance of our application. It provides a mechanism that compares two render trees to know exactly what has changed and only updates what is necessary on the actual DOM
+
+React is an SPA language
+
+App.js and Index.js are going to be our main files when starting/building a React App
+
