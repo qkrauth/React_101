@@ -1,3 +1,7 @@
+////////// REACT 101 - WEEK 1 DAY 1 //////////
+
+
+
 use "let" when you want to create a variable that is really variable
 
 use "const" when you want to constant variable/value (never changes)
@@ -54,4 +58,48 @@ What is the virtual DOM? React uses virtual DOM to optimize the performance of o
 React is an SPA language
 
 App.js and Index.js are going to be our main files when starting/building a React App
+
+
+
+////////// REACT COMPONENTS & PROPS - WEEK 1 DAY 2 //////////
+
+
+
+Components are re-usuable building blocks in the UI of a page, they are a combination of HTML, CSS, & JS code that make up a page
+
+You build individual components and tell React how to compose them together into the user interface
+
+React allows you to create re-usuable and reactive components consisting of HTML and JS (little CSS)
+
+React code is written in a "Declarative Way" you will define the desires target/end state and then it is Reacts job to figure out which parts of the website need to be added or removed etc
+
+index.js is the first file that is executed when you visit the webpage on for example localhost:3000
+
+Single Page Applications SPA's only have 1 HTML file which is what shows up on the screen at the end
+
+App.js is our root component, meaning all other components will at some point come through the App.js. App.js is rendered directly onto our 1 HTML document
+
+! A component is React is just a JavaScript function !
+
+components and elements in JSX/React need to begin with an uppercase character 'ExpenseItem"
+
+You can replace hard coded data in React/JSX using "{}"
+
+Props or (Properties) are basically attributes for our components
+
+
+
+////////// MANAGING STATE & EVENTS - WEEK 1 DAY 3 //////////
+
+
+
+the event handlers or "on" actions like "onClick" want a function passed as a value
+
+when using a function inside an onClick you just point at the function and not call it with () at the end clickHandler() <-- is a no
+
+the function "useState" is provided by the react library that allows us to define values as State where changes to these values should reflect in the component function being called again. useState is a react hook.
+
+useState always returns an array with 2 elements, the first element is the current state value and the second element is a function for updating that
+
+
 
