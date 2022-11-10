@@ -101,5 +101,17 @@ the function "useState" is provided by the react library that allows us to defin
 
 useState always returns an array with 2 elements, the first element is the current state value and the second element is a function for updating that
 
+props can only be sent from direct parents to direct childs we cant skip over components
 
+whenever you are using "two way binding" you are working with a controlled component 
+
+
+
+////////// RENDERING LISTS & STYLING COMPONENTS - WEEK 1 DAY 4 //////////
+
+
+
+.map() -> this method created a new array based on another array, it transforms the elements from the original array. example with .map we can x2 every number in an array, with map you can do something to every item in an array and creates anew array with the transformed data
+
+.map takes a function as an argument, and that function executes for every element in the array
 
