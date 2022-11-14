@@ -1,4 +1,5 @@
-////////// REACT 101 - WEEK 1 DAY 1 //////////
+////////// REACT 101, REACT COMPONENTS & PROPS, MANAGING STATE & EVENTS, RENDERING LISTS & STYLING COMPONENTS - WEEK 1 //////////
+
 
 
 
@@ -60,11 +61,6 @@ React is an SPA language
 App.js and Index.js are going to be our main files when starting/building a React App
 
 
-
-////////// REACT COMPONENTS & PROPS - WEEK 1 DAY 2 //////////
-
-
-
 Components are re-usuable building blocks in the UI of a page, they are a combination of HTML, CSS, & JS code that make up a page
 
 You build individual components and tell React how to compose them together into the user interface
@@ -87,12 +83,6 @@ You can replace hard coded data in React/JSX using "{}"
 
 Props or (Properties) are basically attributes for our components
 
-
-
-////////// MANAGING STATE & EVENTS - WEEK 1 DAY 3 //////////
-
-
-
 the event handlers or "on" actions like "onClick" want a function passed as a value
 
 when using a function inside an onClick you just point at the function and not call it with () at the end clickHandler() <-- is a no
@@ -105,13 +95,21 @@ props can only be sent from direct parents to direct childs we cant skip over co
 
 whenever you are using "two way binding" you are working with a controlled component 
 
-
-
-////////// RENDERING LISTS & STYLING COMPONENTS - WEEK 1 DAY 4 //////////
-
-
-
 .map() -> this method created a new array based on another array, it transforms the elements from the original array. example with .map we can x2 every number in an array, with map you can do something to every item in an array and creates anew array with the transformed data
 
 .map takes a function as an argument, and that function executes for every element in the array
+
+if they ask to "render a JSX block" they mean use "{}"
+
+
+
+
+////////// Project Planning, Hooks, Managing State with useContext & useReducer, API Requests - Week 2 //////////
+
+
+
+
+React Project Planning phases: Wireframes (Visualize/Design), Component Tree, Code Organization (VSCode-public/src/components), CSS Method, Check API (for necessary info), Make the app static for demonstration
+
+We cannot pass props from Child to parent, only parent to child. so we can often pass down a function that receives a parameter, or we can pass down the "set" function
 
