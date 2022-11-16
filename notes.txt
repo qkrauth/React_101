@@ -113,3 +113,31 @@ React Project Planning phases: Wireframes (Visualize/Design), Component Tree, Co
 
 We cannot pass props from Child to parent, only parent to child. so we can often pass down a function that receives a parameter, or we can pass down the "set" function
 
+JSX has limitations, the most notable being you have to wrap JSX code in 1 large JSX element often a Declarative, you cant return more than one root element
+
+Fragments render empty wrappers, they dont render any HTML element to the DOM
+
+A modal is basically an overlay to an entire page meaning it should be over everything elements, dont use nested modals
+
+We can use a portal to keep writing components normally but to still render it differently in the DOM. You can use createPortal() to portal or move a components HTML code somewhere else
+
+A "ref" allows us to get access to other DOM elements and work with them, with refs we can set up a connection between HTML elements and other JS code
+
+An Effect or (side)Effect is responsible for doing everything else besides rendering UI and react to user input. So it has the undercover work likr store data in storage, send HTTP requests to backend servers. All these tasks must happen outside of the normal component functions
+
+useEffect is there to handle side effects
+
+useEffect should only run when the conditions are met. A useEffect statement takes in 2 parameters, an arrow function & an array for the dependencies
+
+one of the main uses of useEffect for us is for axios calls, or to check if info exists in the browser
+
+React Context allows us to trigger an action in the component wide state storage and directly pass that to the component that is interested without building a long prop sending chain
+
+Context is the app-wide state. React.createContext
+
+Context is not a component but Context.provider is a component
+
+useContext is the hook and you pass the context pointer you want to use -> const ctx = useContext(AuthContext);
+
+hooks cannot be nested. They must all be called or used at the first level of the functions/components
+
