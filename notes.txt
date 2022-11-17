@@ -141,3 +141,19 @@ useContext is the hook and you pass the context pointer you want to use -> const
 
 hooks cannot be nested. They must all be called or used at the first level of the functions/components
 
+a useRef is similar to useState in that in persists between renders in our component, but useRef does not cause our component to reupdate when it gets changed. the component will not re-render unlike useState
+
+useRef also does not return 2 items in an array like useState does, it returns 1 object with a property of {current: 0}
+
+useReducer returns an array like use state "const = []" and it takes to parameters inside the useReducer function. A reducer function that we perform on our state to get new state, and the other parameter will be an initial state value in an object "{ count: 0 }"
+
+the returning array for useReducer will usually be "const = [state, dispatch]" dispatch being a function 
+
+useContext is broken into 2 different sections, we have context.provider where we want to wrap all the code that needs access to the info in the context, and a single prop called "value" which is what the value of the context is
+
+everything inside of provider has access to the value prop, useContext is used for passing down props all the way down into any of the children without having to manually pass all the props
+
+A functional component is a normal JS function that can take in props as an argument, and it will render an element
+
+A class component will use the class keyword, the class needs to extend from React.Component library, we essentially create a react component in a class, a class comes with a render function. render function returns the JSX as normal
+
