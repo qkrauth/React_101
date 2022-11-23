@@ -157,3 +157,26 @@ A functional component is a normal JS function that can take in props as an argu
 
 A class component will use the class keyword, the class needs to extend from React.Component library, we essentially create a react component in a class, a class comes with a render function. render function returns the JSX as normal
 
+
+
+
+
+////////// Routing, UI & UX, CSS, Forms - Week 3 //////////
+
+
+
+
+Single Page Application (SPAs) Routing, the illusion of adding multiple pages with different URLS to the same single page application
+
+import {Route, Routes} from "react-router-dom" both of these route keywords are needed from the library
+
+import {Link} from "react-router-dom. we use Link instead of href because Link does not refresh the page, or re renders our app. normal href tags re render the page and takes away from our Single Page Application
+
+we want to define our Routes, then use Link to navigate to other pages in our SPA without re rendering our app
+
+import {NavLink} from "react-router-dom" NavLink works just like Link but also will set a CSS class on the active item
+
+To add dynamic routes, you must use a ":" in the Route's path, it takes any value the name is up to you
+
+import {useParams} from "react-router-dom" if we call the useParams() hook, it returns a params object which we can store in a variable, it has key value pairs that contains the dynamic info to lead to the page
+
